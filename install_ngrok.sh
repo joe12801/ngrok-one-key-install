@@ -285,7 +285,7 @@ function pre_install(){
         echo -e "ngrok status manage: ${COLOR_PINKBACK_WHITEFONT}/etc/init.d/ngrokd${COLOR_END} {${COLOR_GREEN}start${COLOR_END}|${COLOR_PINK}stop${COLOR_END}|${COLOR_YELOW}restart${COLOR_END}|${COLOR_BLUE}config${COLOR_END}|${COLOR_RED}adduser${COLOR_END}|${COLOR_GREEN}info${COLOR_END}}"
         echo -e "Your Domain: ${COLOR_GREEN}${NGROK_DOMAIN}${COLOR_END}"
         echo -e "Ngrok password: ${COLOR_GREEN}${ngrok_pass}${COLOR_END}"
-        echo -e "http_port: ${COLOR_GREEN}80${COLOR_END}"
+        echo -e "http_port: ${COLOR_GREEN}81${COLOR_END}"
         echo -e "https_port: ${COLOR_GREEN}443${COLOR_END}"
         echo -e "remote_port: ${COLOR_GREEN}4443${COLOR_END}"
         echo -e "Config file:   ${COLOR_GREEN}${str_ngrok_dir}/.ngrok_config.sh${COLOR_END}"
@@ -315,7 +315,7 @@ cat > ${str_ngrok_dir}/.ngrok_config.sh <<EOF
 # -------------config START-------------
 dns="${NGROK_DOMAIN}"
 pass="${ngrok_pass}"
-http_port=80
+http_port=81
 https_port=443
 remote_port=4443
 srtCRT=server.crt
@@ -330,7 +330,7 @@ cat > ${str_ngrok_dir}/.ngrok_config.sh <<EOF
 # -------------config START-------------
 dns="${NGROK_DOMAIN}"
 pass="${ngrok_pass}"
-http_port=80
+http_port=81
 https_port=443
 remote_port=4443
 srtCRT=server.crt
